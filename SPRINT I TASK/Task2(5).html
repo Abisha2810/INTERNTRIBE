@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2(5)</title>
+    <style>
+        .container
+        {
+            max-width: 400px;
+            max-height: 500px;
+            margin: 20px auto;
+            background-color: rgb(212, 210, 210);
+            color: white;
+            border: 4px solid rgb(212, 210, 210);
+
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .page
+        {
+            padding: 10px;
+            text-align: center;
+            background-color: black;
+            border-left:20px solid rgb(212, 210, 210);
+            border-right:20px solid rgb(212, 210, 210);
+            border-top:20px solid rgb(212, 210, 210);
+         }
+
+
+         .nav
+         {
+            text-align: center;
+            padding: 2px;
+            background-color: gray;
+            border-bottom: 10px solid rgb(212, 210, 210);
+            border-left:20px solid rgb(212, 210, 210);
+            border-right:20px solid rgb(212, 210, 210);
+         }
+         .intro
+         {
+            text-align: center;
+            background-color:gray ;
+            height: 40px;
+            border-bottom:20px solid rgb(212, 210, 210);
+            border-left:20px solid rgb(212, 210, 210);
+            border-right:20px solid rgb(212, 210, 210);
+            padding-top:10px;
+
+         }
+         .content-area
+         {
+          display: flex;
+         }
+         .in{
+             display: inline;
+         }
+         .main
+         {
+            width: 200px;
+            background-color: black;
+            height: 70px;
+            text-align: center;
+            padding-top: 40px;
+            border-right: 20px solid rgb(212, 210, 210);
+            border-left: 20px solid rgb(212, 210, 210); 
+
+         }
+         .side
+         {
+            width: 140px;
+            background-color: rgb(177, 174, 174);
+            border-right:20px solid rgb(212, 210, 210);
+            text-align: center;
+            padding-top: 40px;
+        }
+        .footer
+        {
+            text-align: center;
+            background-color:gray;
+            border-left:20px solid rgb(212, 210, 210);
+            border-right:20px solid rgb(212,210,210);
+            border-top:20px solid rgb(212,210,210);
+            height: 40px;
+            padding-top: 14px;
+
+        }
+
+    @media screen and (max-width: 500px) {
+        .content-area {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main, .side {
+            width: 100%;
+            border-left: 20px solid rgb(212, 210, 210);
+            border-right: 20px solid rgb(212, 210, 210);
+            border-bottom: 20px solid rgb(212, 210, 210);
+        }
+
+        .main {
+            border-right: none;  
+        }
+    }
+
+    </style>
+</head>
+<body>
+      <div class="container">
+        <div class="page"><span class="in">Page Title</span></div>
+        <div class="nav"><span class="in">Navigation</span></div>
+        <div class="intro"><span class="in">Introduction</span></div>
+        <div class="content-area">
+            <div class="main"><span class="in">Main Content Area</span></div>
+            <div class="side"><span class="in">Sidebar</span></div>
+        </div>
+        <div class="footer"><span class="in">Footer</span></div>
+      </div>
+</body>
+</html>
