@@ -1,0 +1,10 @@
+var a=10;
+var b=20;
+var temp;
+console.log("Before swapping a="+a);
+console.log("Before swapping b="+b);
+temp=a;
+a=b;
+b=temp;
+console.log("After swapping a="+a);
+console.log("After swapping b="+b);
