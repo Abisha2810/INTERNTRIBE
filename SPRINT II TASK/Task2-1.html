@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2-1</title>
+</head>
+<body>
+    <script>
+        var arr1 = [3, -2, 8, 1, -9, -17];
+        var arr2 = [13, 1, 2, 28, 10, 98, 9];
+
+        function negative(arr1) {
+            var result = [];
+            for (var i = 0; i < arr1.length; i++) {
+                if (arr1[i] < 0) {
+                    result.push(arr1[i]);
+                }
+            }
+            return result;
+        }
+
+        function odd(arr2) {
+            for (var j = 0; j < arr2.length; j++) {
+                if (arr2[j] % 2 != 0) {
+                    arr2[j] = 0;
+                }
+            }
+            return arr2;
+        }
+
+        console.log("Negative number array is: " + negative(arr1));
+        console.log("New updated array is: " + odd(arr2));
+    </script>
+</body>
+</html>

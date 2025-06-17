@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2-5</title>
+</head>
+<body>
+    <script>
+    function isStrongPassword(password) {
+    const hasLength = password.length >= 8;
+    const hasLower = /[a-z]/.test(password);
+    const hasUpper = /[A-Z]/.test(password);
+    const hasDigit = /[0-9]/.test(password);
+    const hasSpecial = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+
+    return hasLength && hasLower && hasUpper && hasDigit && hasSpecial;
+}
+let password = prompt("Enter your password:");
+if (isStrongPassword(password)) {
+    console.log("Strong password 💪");
+} else {
+    console.log("Weak password ❌. Try again with at least 8 characters, and include uppercase, lowercase, number, and special character.");
+}
+    </script>
+</body>
+</html>

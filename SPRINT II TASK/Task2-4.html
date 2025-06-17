@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2-4</title>
+</head>
+<body>
+    <script>
+     var arr1 = [1, 0, 2, 3, 0, 4, 5, 0];
+
+function duplicate(arr1) {
+    var temp = [];
+    for (var i = 0; i < arr1.length; i++) {
+        temp.push(arr1[i]);
+        if (arr1[i] === 0) {
+            temp.push(0);
+        }
+    }
+    for (var i = 0; i < arr1.length; i++) {
+        arr1[i] = temp[i];
+    }
+    return arr1
+}
+console.log("After duplicating zeros:"+duplicate(arr1))
+        var arr2=[5,10,20,2,0,33,100,90]
+        console.log("Modified array is "+half(arr2))
+        function half(arr2)
+        {
+            var result=[]
+            for(var i=0;i<arr2.length;i++)
+            {
+                result.push(arr2[i])
+                if(arr2[i]%5==0)
+                {
+                   result.push(arr2[i]/2) 
+                }
+            }
+            return result
+        }
+    </script>
+</body>
+</html>
