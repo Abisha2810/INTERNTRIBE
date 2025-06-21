@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu h4 {
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1eaea;
+  padding: 40px;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h3 {
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  margin-bottom: 15px;
+}
+
+.hero-text button {
+  margin-top: 10px;
+  padding: 6px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.hero-image img {
+  width: 350px;
+  height: auto;
+}
+
+/* Cards Section */
+.section-heading {
+  padding: 40px 50px 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 40px;
+}
+
+.card {
+  width: 30%;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.card h4,
+.card p {
+  margin-bottom: 10px;
+}
+
+.card button {
+  padding: 6px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 60px 50px;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 20px;
+}
+
+.post {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.date {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.social div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.social img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
