@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2-1</title>
+</head>
+<body>
+    <h3>Select Gender:</h3>
+    <input type="radio" name="gen" value="Male"> Male
+    <input type="radio" name="gen" value="Female"> Female
+    <h3>Select Hobbies:</h3>
+    <input type="checkbox" name="hob" value="Reading"> Reading
+    <input type="checkbox" name="hob" value="Coding"> Coding
+    <input type="checkbox" name="hob" value="Gaming"> Gaming
+<br><br>
+<button onclick="display()">Submit</button>
+<p id="tag"></p>
+</body>
+<script>
+function display() 
+{
+    const gender = document.querySelector('input[name="gen"]:checked')?.value;
+    const hobbies = Array.from(document.querySelectorAll('input[name="hob"]:checked')).map(hob => hob.value).join(', ');
+
+    document.getElementById("tag").innerHTML = `Selected Gender: ${gender || 'None'} <br> Selected Hobbies: ${hobbies || 'None'}`;
+}
+</script>
+</html>

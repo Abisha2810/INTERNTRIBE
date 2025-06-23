@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2-2</title>
+</head>
+<body>
+    <h1 class="one">Agile Tribers</h1>
+    <h1 class="two">Agile Tribers</h1>
+    <h1 class="two">Agile Tribers</h1>
+    <h1 class="one">Agile Tribers</h1>
+    <p id="ptag"></p>
+    <button onclick="display()">Click Me</button>
+</body>
+     <script>
+        var btn=document.querySelector("button");
+        function display()
+        {
+          btn.style.border="none";
+          btn.style.backgroundColor="Orange";
+          btn.style.padding="10px 20px";
+          btn.style.color="white";
+          btn.style.borderRadius="10px";
+          var head1=document.querySelectorAll(".one")
+          head1[0].style.backgroundColor="blue";
+          head1[0].style.color="White";
+          head1[0].style.fontFamily="sans-serif";
+          head1[1].style.backgroundColor="blue";
+          head1[1].style.color="White";
+          head1[1].style.fontFamily="sans-serif";
+          var head2=document.querySelectorAll(".two");
+          head2[0].style.backgroundColor="Orange";
+          head2[0].style.color="white";
+          head2[0].style.fontFamily="Lucida";
+          head2[1].style.backgroundColor="Orange";
+          head2[1].style.color="white";
+          head2[1].style.fontFamily="Lucida";
+          var pt=document.getElementById("ptag");
+          pt.innerHTML="The AI-First Software Company"
+        }
+      </script>
+</html>
