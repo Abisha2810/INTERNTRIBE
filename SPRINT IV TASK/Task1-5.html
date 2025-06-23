@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1-5</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter any text" id="in1" onchange="display()">
+    <h1 id="in3"></h1>
+</body>
+<script>
+    function display()
+    {
+    const val=document.getElementById("in1").value;
+    document.getElementById("in3").innerHTML=val;
+    console.log(val);
+    }
+</script>
+</html>
