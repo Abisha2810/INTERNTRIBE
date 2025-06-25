@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2-4</title>
+</head>
+<body>
+    <script>
+        function display(a,b)
+        {
+            try
+            {
+                if(b==0)
+                {
+                    console.log("Division by zero is not allowed.")
+                }
+                return a/b;
+            }                                                                                       
+            catch(error)
+            {
+                return error.message;
+            }
+        }
+        console.log(display(4,0));
+        console.log(display(4,2));
+    </script>
+</body>
+</html>

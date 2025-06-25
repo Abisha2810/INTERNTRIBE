@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2-8</title>
+</head>
+<body>
+    <script>
+        function sum(...numbers)
+        {
+            return numbers.reduce((total,num)=>total+num,0);
+        }
+        console.log("Sum is "+sum(1,2,3,4,5));
+    </script>
+</body>
+</html>
