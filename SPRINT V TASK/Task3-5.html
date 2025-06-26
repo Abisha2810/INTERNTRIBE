@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3-5</title>
+</head>
+<body>
+    <script>
+        function display()
+        {
+            const cart = [ 
+                { item: 'apple', price: 1.5 }, 
+                { item: 'banana', price: 2.0 }, 
+                { item: 'orange', price: 1.25 }];
+            return cart.reduce((total,product)=>total+product.price,0);
+        }
+        console.log("Total price of items is "+display());
+    </script>
+</body>
+</html>

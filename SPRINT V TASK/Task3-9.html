@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3-9</title>
+</head>
+<body>
+    <script>
+        function display()
+        {
+        const tasks = [ 
+           { taskName: 'Task 1', dueDate: '2023-06-01' }, 
+           { taskName: 'Task 2', dueDate: '2024-05-01' }, 
+           { taskName: 'Task 3', dueDate: '2025-10-01' } ];
+           const today='2025-06-25';
+           return tasks.find(date=>date.dueDate<today);
+        }
+        console.log(display());
+    </script>
+</body>
+</html>
