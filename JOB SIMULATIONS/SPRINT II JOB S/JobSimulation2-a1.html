@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobSimulation2-a1</title>
+    <link rel="stylesheet" href="JobSimulation2-a1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="b1i">
+                <input type="text" id="display">
+            </div>
+            <div class="b1ii">
+                <div class="b1iii">
+                    <button onclick="append('1')"><b>1</b></button>
+                    <button onclick="append('4')"><b>4</b></button>
+                    <button onclick="append('7')"><b>7</b></button>
+                    <button class="one" onclick="clearDisplay()"><b>C</b></button>
+                </div>
+                <div class="b1iii">
+                    <button onclick="append('2')"><b>2</b></button>
+                    <button onclick="append('5')"><b>5</b></button>
+                    <button onclick="append('8')"><b>8</b></button>
+                    <button onclick="append('0')"><b>0</b></button>
+                </div>
+                <div class="b1iii">
+                     <button onclick="append('3')"><b>3</b></button>
+                     <button onclick="append('6')"><b>6</b></button>
+                     <button onclick="append('9')"><b>9</b></button>
+                     <button class="two" onclick="calculate(value)"><b>=</b></button>
+                </div>
+                <div class="b1iii">
+                     <button class="three" onclick="append('+')"><b>+</b></button>
+                     <button class="three" onclick="append('-')"><b>-</b></button>
+                     <button class="three" onclick="append('*')"><b>*</b></button>
+                     <button class="three" onclick="append('/')"><b>/</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JobSimulation2-a1.js"></script>
+</body>
+</html>
