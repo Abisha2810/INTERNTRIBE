@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task4-10</title>
+  </head>
+  <body>
+    <script>
+        function display(product)
+        {
+            let TotalPrice=product.reduce((total,{price})=>total+price,0);
+            let average=TotalPrice/product.length;
+            let result=product.filter(({price})=>price>average).map(({name})=>name);
+            return result;
+        }
+      var product = [
+        { name: "Laptop", price: 1000 },
+        { name: "Phone", price: 500 },
+        { name: "Tablet", price: 700 },
+      ];
+      console.log(display(product));
+    </script>
+  </body>
+</html>

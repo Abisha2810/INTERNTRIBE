@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task4-3.html</title>
+  </head>
+  <body>
+    <script>
+        function display(employees,id)
+        {
+          return employees.find(employees=>employees.id===id);
+        }
+      const employees = [
+        { id: 1, name: "Alice", position: "Manager" },
+        { id: 2, name: "Bob", position: "Engineer" },
+        { id: 3, name: "Charlie", position: "Technician" },
+      ];
+      console.log(display(employees,2));
+    </script>
+  </body>
+</html>
