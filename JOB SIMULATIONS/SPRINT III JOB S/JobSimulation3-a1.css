@@ -1,0 +1,111 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body
+{
+   background-image: url('background.jpg');
+   background-repeat:no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+ .container
+ {
+    background: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+.todo input
+{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 140px;
+    border: none;
+    border: 2px solid black;
+    border-radius:5px;
+}
+.todo button
+{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(124, 242, 251);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.todo h2
+{
+    text-align: center;
+    padding: 10px;
+}
+.todo ul
+{
+    list-style: none;
+    padding-left:5px;
+}
+#but1
+{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.todo li
+{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding-top: 10px;
+}
+.todo li div
+{
+    flex: 1;
+    word-break: break-word;
+}
+.todo li button
+{
+    margin: 0;
+    flex-shrink: 0;
+}
+.done
+{
+    text-decoration: line-through;
+    color: grey;
+}
+@media (max-width: 700px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .todo input {
+    width: 100%;
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .todo button {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .todo li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .todo li button {
+    width: 100%;
+  }
+
+  .todo li div {
+    width: 100%;
+  }
+}
