@@ -1,0 +1,79 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+  min-height: 100vh;
+  background: linear-gradient(lightgray,white);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+}
+h1
+{
+  text-align: center;
+  padding: 20px;
+  color:rgb(1, 1, 87)
+}
+#sec1
+{
+  text-align: center;
+}
+#sec1 input
+{
+  padding-left: 10px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+#scroll
+{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+button
+{
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(79, 79, 208);
+  font-size: 1rem;
+}
+button:hover
+{
+  background-color: white;
+  color: black;
+}
+table
+{
+  width:100%;
+  padding:20px;
+}
+th
+{
+  background-color: rgb(1, 1, 87);
+  color: white;
+  height: 40px;
+  border-radius: 2px;
+}
+#rows td
+{
+  height: 30px;
+}
+#rows tr:nth-child(even)
+{
+  background-color: lightgray;
+}
+p
+{
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px;
+}
