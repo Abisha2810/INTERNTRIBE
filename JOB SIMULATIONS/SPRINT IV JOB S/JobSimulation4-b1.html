@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobSimulation4-b1</title>
+  <link rel="stylesheet" href="JobSimulation4-b1.css" />
+</head>
+<body>
+  <header>
+    <h1>Employee Management Dashboard</h1>
+  </header>
+
+  <section class="controls">
+    <input type="text" id="searchInput" placeholder="Search by name..." />
+    <select id="departmentFilter">
+      <option value="">All Departments</option>
+      <option value="HR">HR</option>
+      <option value="Engineering">Engineering</option>
+      <option value="Marketing">Marketing</option>
+    </select>
+    <button onclick="convertToUppercase()">Uppercase Names</button>
+    <button onclick="calculateAverageSalary()">Average Salary</button>
+  </section>
+
+  <section class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Department</th>
+          <th>Role</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody id="employeeTable"></tbody>
+    </table>
+  </section>
+
+  <section class="results">
+    <p id="averageSalary"></p>
+    <p id="searchResult"></p>
+  </section>
+
+  <script src="JobSimulation4-b1.js"></script>
+</body>
+</html>

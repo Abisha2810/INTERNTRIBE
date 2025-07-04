@@ -1,0 +1,135 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  color: #333;
+  transition: background 0.5s ease;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  animation: slideIn 1s ease forwards;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Controls section */
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+input, select, button {
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 8px rgba(41, 128, 185, 0.3);
+}
+
+button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #3498db;
+  transform: scale(1.05);
+}
+
+/* Table styles */
+.table-container {
+  overflow-x: auto;
+  animation: fadeInUp 1s ease;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #34495e;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+/* Results panel */
+.results {
+  margin-top: 25px;
+  font-weight: bold;
+  animation: fadeIn 1.5s ease;
+  color: #2c3e50;
+  text-align: center;
+}
+
+#averageSalary, #searchResult {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
